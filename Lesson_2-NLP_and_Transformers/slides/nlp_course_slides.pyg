@@ -1,0 +1,24 @@
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import Pipeline
+
+# Exemple de commentaires avec leur sentiment (1=positif, 0=négatif)
+X_train = [
+    "Ce film était fantastique, j'ai adoré chaque minute !",
+    "Quelle perte de temps, je n'ai pas aimé du tout.",
+    "Les acteurs étaient excellents, très bon film."
+]
+y_train = [1, 0, 1]  # Labels: positif, négatif, positif
+
+# Création d'un pipeline TF-IDF + Régression Logistique
+pipeline = Pipeline([
+    ('vectorizer', TfidfVectorizer(max_features=1000)),
+    ('classifier', LogisticRegression())
+])
+
+# Entraînement
+pipeline.fit(X_train, y_train)
+
+# Prédiction
+X_test = ["J'ai vraiment apprécié ce film, superbe !"]
+prediction = pipeline.predict(X_test)  # Résultat attendu: [1] (positif)
