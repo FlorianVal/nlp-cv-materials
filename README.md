@@ -24,9 +24,7 @@ Le cours est organisé en 3 sessions théoriques et 1 session de projet.
 ### [Lesson 3 : TP Vision & NLP](./Lesson_3-TP_Vision_and_NLP)
 **Objectifs :** Mise en pratique croisée des concepts de vision et de langage avec PyTorch et HuggingFace.
 - **Partie 1** : Fondamentaux PyTorch (tenseurs, couches Linear) et exploration de modèles HF
-- **Partie 2** : Transfer Learning en Vision (Feature Extraction vs Fine-tuning)
-
-⚠️ **Optimisé pour les PCs de faculté** : modèles légers, entraînement rapide sur CPU.
+- **Partie 2** : Transfer Learning en Vision (Feature Extraction vs Fine-tuning
 
 ### [Lesson 4 : Projet](./Lesson_4-Project)
 **Objectifs :** Projet de fin de cours (Sujet à définir).
