@@ -47,8 +47,13 @@ practicals/
 
 ## Installation
 
+Depuis ce dossier :
+
 ```bash
-pip install torch torchvision transformers datasets scikit-learn matplotlib seaborn tqdm
+python -m venv .venv
+source .venv/bin/activate  # (Windows: .venv\\Scripts\\activate)
+pip install -U pip
+pip install -r requirements.txt
 ```
 
 ## Notes pour les étudiants

@@ -1,0 +1,25 @@
+# Lesson 3 — TP Vision & NLP
+# Install with: pip install -r requirements.txt
+
+# Core ML
+torch>=2.1.0
+torchvision
+
+# NLP
+transformers
+
+datasets
+
+# Utils / viz
+numpy>=1.20.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# ML utils
+scikit-learn>=1.0.0
+
+tqdm>=4.64.0
+requests>=2.25.0
+
+# Image I/O (used via PIL)
+Pillow
